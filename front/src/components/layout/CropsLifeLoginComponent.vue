@@ -23,11 +23,21 @@
     </template>
     <template v-slot:loginFooter> 
         <b-img
-          class="w-75"
+          class="w-50"
           center
           :src="
             $opensilex.getResourceURI( 
               'images/inrae-vector-logo.png'
+            )
+          "
+          alt="Responsive image"
+        ></b-img> 
+        <b-img
+          class="w-25"
+          center
+          :src="
+            $opensilex.getResourceURI( 
+              'images/LIFE.png'
             )
           "
           alt="Responsive image"

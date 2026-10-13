@@ -17,10 +17,14 @@
     <owl:Ontology rdf:about="http://www.opensilex.org/vocabulary/oeso-agrivoltaics">
         <owl:versionIRI rdf:resource="http://www.opensilex.org/vocabulary/oeso-agrivoltaics/1.0.0"/>
         <owl:versionInfo>Version 1.0.0 (2026-10-13) created by INRAE</owl:versionInfo>
+        <dcterms:title xml:lang="fr">OpenSILEX - Agrivoltaïsme</dcterms:title>
+        <dcterms:title xml:lang="en">OpenSILEX - Agrivoltaics</dcterms:title>
+        <dcterms:description xml:lang="fr">Extension de oeso-core pour l'expérimentation agrivoltaïque, prévue pour être chargée avec oeso-core et oeso-vitis, sans oeso-phis. Elle contient les concepts de l'ancienne ontologie oeso-sunagri (et oeev-sunagri) qui ne sont définis ni dans oeso-core ni dans oeso-vitis. Les termes d'oeso-phis dont dépendent le code d'OpenSILEX ou les données sont importés selon MIREOT (même IRI, rdfs:isDefinedBy vers oeso-phis). Les anciens concepts sont conservés comme termes dépréciés (owl:deprecated), liés à leur remplaçant par dcterms:isReplacedBy et par une correspondance SKOS. Chaque définition est sourcée (dc:source), ou marquée « non sourcé ».</dcterms:description>
+        <dcterms:description xml:lang="en">Extension of oeso-core for agrivoltaic experiments, meant to be loaded with oeso-core and oeso-vitis, without oeso-phis. It holds the concepts of the former oeso-sunagri (and oeev-sunagri) ontology that are defined neither in oeso-core nor in oeso-vitis. The oeso-phis terms that the OpenSILEX code or the data depend on are imported following MIREOT (same IRI, rdfs:isDefinedBy to oeso-phis). Former concepts are kept as deprecated terms (owl:deprecated), linked to their replacement with dcterms:isReplacedBy and a SKOS mapping. Every definition is sourced (dc:source) or marked "not sourced".</dcterms:description>
         <rdfs:label xml:lang="fr">OpenSILEX - Agrivoltaïsme</rdfs:label>
         <rdfs:label xml:lang="en">OpenSILEX - Agrivoltaics</rdfs:label>
-        <rdfs:comment xml:lang="fr">Extension de oeso-core pour l'expérimentation agrivoltaïque, prévue pour être chargée avec oeso-core et oeso-vitis, sans oeso-phis. Elle contient les concepts de l'ancienne ontologie oeso-sunagri (et oeev-sunagri) qui ne sont définis ni dans oeso-core ni dans oeso-vitis. Les termes d'oeso-phis dont dépendent le code d'OpenSILEX ou les données sont importés selon MIREOT (même IRI, rdfs:isDefinedBy vers oeso-phis). Les anciens concepts sont conservés comme termes dépréciés (owl:deprecated), liés à leur remplaçant par dcterms:isReplacedBy et par une correspondance SKOS.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Extension of oeso-core for agrivoltaic experiments, meant to be loaded with oeso-core and oeso-vitis, without oeso-phis. It holds the concepts of the former oeso-sunagri (and oeev-sunagri) ontology that are defined neither in oeso-core nor in oeso-vitis. The oeso-phis terms that the OpenSILEX code or the data depend on are imported following MIREOT (same IRI, rdfs:isDefinedBy to oeso-phis). Former concepts are kept as deprecated terms (owl:deprecated), linked to their replacement with dcterms:isReplacedBy and a SKOS mapping.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Extension de oeso-core pour l'expérimentation agrivoltaïque, prévue pour être chargée avec oeso-core et oeso-vitis, sans oeso-phis. Elle contient les concepts de l'ancienne ontologie oeso-sunagri (et oeev-sunagri) qui ne sont définis ni dans oeso-core ni dans oeso-vitis. Les termes d'oeso-phis dont dépendent le code d'OpenSILEX ou les données sont importés selon MIREOT (même IRI, rdfs:isDefinedBy vers oeso-phis). Les anciens concepts sont conservés comme termes dépréciés (owl:deprecated), liés à leur remplaçant par dcterms:isReplacedBy et par une correspondance SKOS. Chaque définition est sourcée (dc:source), ou marquée « non sourcé ».</rdfs:comment>
+        <rdfs:comment xml:lang="en">Extension of oeso-core for agrivoltaic experiments, meant to be loaded with oeso-core and oeso-vitis, without oeso-phis. It holds the concepts of the former oeso-sunagri (and oeev-sunagri) ontology that are defined neither in oeso-core nor in oeso-vitis. The oeso-phis terms that the OpenSILEX code or the data depend on are imported following MIREOT (same IRI, rdfs:isDefinedBy to oeso-phis). Former concepts are kept as deprecated terms (owl:deprecated), linked to their replacement with dcterms:isReplacedBy and a SKOS mapping. Every definition is sourced (dc:source) or marked "not sourced".</rdfs:comment>
         <dc:creator>Arnaud Charleroy (INRAE)</dc:creator>
         <dc:contributor>Arnaud Champetier</dc:contributor>
         <dc:contributor>Rémi Blanchard</dc:contributor>
@@ -72,6 +76,12 @@
 
 
 
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+
+
+
     <!-- http://purl.org/dc/terms/isReplacedBy -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isReplacedBy"/>
@@ -93,6 +103,12 @@
     <!-- http://purl.org/dc/terms/requires -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/requires"/>
+
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
 
 
 
@@ -311,7 +327,7 @@
         <rdfs:label xml:lang="en">Thinning</rdfs:label>
         <rdfs:comment xml:lang="fr">Bien que les fruits aient développé des mécanismes d'autorégulation de leur charge, la chute physiologique des fruits est souvent insuffisante pour garantir des fruits de bon calibre commercial et un rendement commercial maximal à la récolte. Ce mécanisme est également insuffisant pour éviter les portages alternés. C'est pourquoi l'éclaircissage des fruits, c'est-à-dire la suppression volontaire d'un certain nombre de fruits par arbre, est une pratique culturale incontournable qui doit être réalisée régulièrement chez certaines espèces (Costa, 2018).</rdfs:comment>
         <rdfs:comment xml:lang="en">Although fruits have evolved fruit load self-regulatory mechanisms, physiological fruit drop is often insufficient to guarantee fruits of good marketable size and maximum commercial yield at harvest. This mechanism is also insufficient to avoid alternate bearing. For this reason, fruit thinning, i.e. the voluntary removal of a certain number of fruits per tree, is an unavoidable cultural practice that must be performed regularly in some species (Costa, 2018).</rdfs:comment>
-        <dc:source>Costa G., Botton A., Vizzotto G. (2018). Fruit thinning: advances and trends. Horticultural Reviews 46:185-226. https://doi.org/10.1002/9781119521082.ch4</dc:source>
+        <dc:source>Definition: Costa G., Botton A., Vizzotto G. (2018). Fruit thinning: advances and trends. Horticultural Reviews 46:185-226. https://doi.org/10.1002/9781119521082.ch4</dc:source>
         <skos:closeMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_32701"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opensilex.org/vocabulary/oeso-phis"/>
         <skos:editorialNote xml:lang="fr">Terme d'oeso-phis 3.3 importé selon MIREOT (même IRI, ontologie source déclarée par rdfs:isDefinedBy) : oeso-phis n'est pas chargé avec ce module.</skos:editorialNote>
@@ -324,6 +340,10 @@
         <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#Germplasm"/>
         <rdfs:label xml:lang="fr">Lot de matériel vegetal</rdfs:label>
         <rdfs:label xml:lang="en">Plant material lot</rdfs:label>
+        <rdfs:comment xml:lang="fr">Ensemble de matériel de départ (graines, bulbes, porte-greffes, etc.) d'un matériel génétique donné (traduction de BrAPI).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Collection of starting material (seeds, bulbs, rootstocks, etc.) for a particular germplasm.</rdfs:comment>
+        <dc:source>Definition adapted from: BrAPI v2.1, SeedLot (also known as InventoryLot). https://raw.githubusercontent.com/plantbreeding/BrAPI/brapi-V2.1/Specification/BrAPI-Schema/BrAPI-Germplasm/SeedLot.json</dc:source>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1093/bioinformatics/btz190"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opensilex.org/vocabulary/oeso-phis"/>
         <skos:editorialNote xml:lang="fr">Terme d'oeso-phis 3.3 importé selon MIREOT (même IRI, ontologie source déclarée par rdfs:isDefinedBy) : oeso-phis n'est pas chargé avec ce module. Utilisé par le code d'OpenSILEX (Oeso.PlantMaterialLot, logique du germplasm) : l'IRI doit être conservée.</skos:editorialNote>
     </owl:Class>
@@ -335,6 +355,9 @@
         <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#PlantMaterialLot"/>
         <rdfs:label xml:lang="fr">Lot de semence</rdfs:label>
         <rdfs:label xml:lang="en">Seed Lot</rdfs:label>
+        <rdfs:comment xml:lang="fr">Quantité déterminée de semences, identifiable physiquement et de manière unique (traduction des règles ISTA).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Specified quantity of seed that is physically and uniquely identifiable.</rdfs:comment>
+        <dc:source>Definition: ISTA (2025). International Rules for Seed Testing, Chapter 2: Sampling, 2.2.1. https://doi.org/10.15258/istarules.2025.02</dc:source>
         <rdfs:isDefinedBy rdf:resource="http://www.opensilex.org/vocabulary/oeso-phis"/>
         <skos:editorialNote xml:lang="fr">Terme d'oeso-phis 3.3 importé selon MIREOT (même IRI, ontologie source déclarée par rdfs:isDefinedBy) : oeso-phis n'est pas chargé avec ce module.</skos:editorialNote>
     </owl:Class>
@@ -346,6 +369,9 @@
         <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#PlantMaterialLot"/>
         <rdfs:label xml:lang="fr">Lot de Porte-greffe</rdfs:label>
         <rdfs:label xml:lang="en">Rootstock Lot</rdfs:label>
+        <rdfs:comment xml:lang="fr">Lot de matériel végétal composé de porte-greffes (AGROVOC c_6653).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Plant material lot made of rootstocks (AGROVOC c_6653).</rdfs:comment>
+        <dc:source>Definition adapted from: BrAPI v2.1, SeedLot (also known as InventoryLot). https://raw.githubusercontent.com/plantbreeding/BrAPI/brapi-V2.1/Specification/BrAPI-Schema/BrAPI-Germplasm/SeedLot.json and AGROVOC c_6653 rootstocks (http://aims.fao.org/aos/agrovoc/c_6653).</dc:source>
         <rdfs:isDefinedBy rdf:resource="http://www.opensilex.org/vocabulary/oeso-phis"/>
         <skos:editorialNote xml:lang="fr">Terme d'oeso-phis 3.3 importé selon MIREOT (même IRI, ontologie source déclarée par rdfs:isDefinedBy) : oeso-phis n'est pas chargé avec ce module.</skos:editorialNote>
     </owl:Class>
@@ -357,6 +383,9 @@
         <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#PlantMaterialLot"/>
         <rdfs:label xml:lang="fr">Lot de greffon</rdfs:label>
         <rdfs:label xml:lang="en">Scion Lot</rdfs:label>
+        <rdfs:comment xml:lang="fr">Lot de matériel végétal composé de greffons (AGROVOC c_6857).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Plant material lot made of scions (AGROVOC c_6857).</rdfs:comment>
+        <dc:source>Definition adapted from: BrAPI v2.1, SeedLot (also known as InventoryLot). https://raw.githubusercontent.com/plantbreeding/BrAPI/brapi-V2.1/Specification/BrAPI-Schema/BrAPI-Germplasm/SeedLot.json and AGROVOC c_6857 scions (http://aims.fao.org/aos/agrovoc/c_6857).</dc:source>
         <rdfs:isDefinedBy rdf:resource="http://www.opensilex.org/vocabulary/oeso-phis"/>
         <skos:editorialNote xml:lang="fr">Terme d'oeso-phis 3.3 importé selon MIREOT (même IRI, ontologie source déclarée par rdfs:isDefinedBy) : oeso-phis n'est pas chargé avec ce module.</skos:editorialNote>
     </owl:Class>
@@ -368,6 +397,10 @@
         <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#PlantMaterialLot"/>
         <rdfs:label xml:lang="fr">Lot de Vitroplant</rdfs:label>
         <rdfs:label xml:lang="en">Vitroplant Lot</rdfs:label>
+        <rdfs:comment xml:lang="fr">Lot de matériel végétal composé de vitroplants (AGROVOC c_27626), c'est-à-dire de petites pousses enracinées régénérées par culture cellulaire après embryogenèse ou organogenèse.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Plant material lot made of vitroplants (AGROVOC c_27626), i.e. small rooted shoots regenerated from cell culture following embryogenesis or organogenesis.</rdfs:comment>
+        <dc:source>Definition adapted from: AGROVOC c_27626 vitroplants (http://aims.fao.org/aos/agrovoc/c_27626) and Zaid A., Hughes H.G., Porceddu E., Nicholas F. (2001). Glossary of biotechnology for food and agriculture. FAO Research and Technology Paper 9, Rome, entry "plantlet". https://www.fao.org/4/Y2775E/y2775e09.htm</dc:source>
+        <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_27626"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opensilex.org/vocabulary/oeso-phis"/>
         <skos:editorialNote xml:lang="fr">Terme d'oeso-phis 3.3 importé selon MIREOT (même IRI, ontologie source déclarée par rdfs:isDefinedBy) : oeso-phis n'est pas chargé avec ce module.</skos:editorialNote>
     </owl:Class>
@@ -391,6 +424,10 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="fr">Cible Radiométrique</rdfs:label>
         <rdfs:label xml:lang="en">Radiometric Target</rdfs:label>
+        <rdfs:comment xml:lang="fr">Cible de référence plane, d'intensité uniforme et de réflectance proche d'une surface lambertienne, placée dans la scène pour étalonner les mesures radiométriques, par exemple pour convertir des images de drone en réflectance.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Flat reference target of uniform intensity and close to Lambertian reflectance, placed in the scene to calibrate radiometric measurements, for example to convert UAV images to reflectance.</rdfs:comment>
+        <dc:source>Definition adapted from: Aasen H., Honkavaara E., Lucieer A., Zarco-Tejada P.J. (2018). Quantitative remote sensing at ultra-high resolution with UAV spectroscopy: a review of sensor technology, measurement procedures, and data correction workflows. Remote Sensing 10(7):1091, section 4.3.2. https://doi.org/10.3390/rs10071091</dc:source>
+        <rdfs:seeAlso rdf:resource="https://nvlpubs.nist.gov/nistpubs/Legacy/MONO/nbsmonograph160.pdf"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opensilex.org/vocabulary/oeso-phis"/>
         <skos:editorialNote xml:lang="fr">Terme d'oeso-phis 3.3 importé selon MIREOT (même IRI, ontologie source déclarée par rdfs:isDefinedBy) : oeso-phis n'est pas chargé avec ce module. Utilisé par l'interface d'OpenSILEX (DeviceList.vue, vocabulary:RadiometricTarget) : l'IRI doit être conservée.</skos:editorialNote>
     </owl:Class>
@@ -404,33 +441,12 @@
         <rdfs:label xml:lang="en">seed</rdfs:label>
         <rdfs:comment xml:lang="fr">Structure végétale multi-tissulaire (PO:0025496) qui se développe à partir d'un ovule (PO:0020003) et contient l'embryon (PO:0009009) qui est protégé par un tégument (PO:0009088).</rdfs:comment>
         <rdfs:comment xml:lang="en">A multi-tissue plant structure (PO:0025496) that develops from a plant ovule (PO:0020003) and has as parts a plant embryo (PO:0009009) enclosed in a seed coat (PO:0009088).</rdfs:comment>
-        <dc:source>Plant Ontology, PO:0009010 seed. http://purl.obolibrary.org/obo/PO_0009010</dc:source>
+        <dc:source>http://purl.obolibrary.org/obo/PO_0009010</dc:source>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/PO_0009010"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opensilex.org/vocabulary/oeso-phis"/>
         <skos:editorialNote xml:lang="fr">Terme d'oeso-phis 3.3 importé selon MIREOT (même IRI, ontologie source déclarée par rdfs:isDefinedBy) : oeso-phis n'est pas chargé avec ce module.</skos:editorialNote>
     </owl:Class>
-
-
-    <!-- http://www.opensilex.org/vocabulary/oeso#Rootstock -->
-
-    <owl:Class rdf:about="http://www.opensilex.org/vocabulary/oeso#Rootstock">
-        <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#ScientificObject"/>
-        <rdfs:label xml:lang="fr">porte-greffe</rdfs:label>
-        <rdfs:label xml:lang="en">rootstock</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://www.opensilex.org/vocabulary/oeso-phis"/>
-        <skos:editorialNote xml:lang="fr">Terme d'oeso-phis 3.3 importé selon MIREOT (même IRI, ontologie source déclarée par rdfs:isDefinedBy) : oeso-phis n'est pas chargé avec ce module. La définition d'oeso-phis, propre à la vigne, n'est pas reprise. Dans oeso-vitis, le porte-greffe d'un cep est un matériel génétique (oeso-vitis:hasRootstock).</skos:editorialNote>
-    </owl:Class>
-
-
-    <!-- http://www.opensilex.org/vocabulary/oeso#Scion -->
-
-    <owl:Class rdf:about="http://www.opensilex.org/vocabulary/oeso#Scion">
-        <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#ScientificObject"/>
-        <rdfs:label xml:lang="fr">greffon</rdfs:label>
-        <rdfs:label xml:lang="en">scion</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://www.opensilex.org/vocabulary/oeso-phis"/>
-        <skos:editorialNote xml:lang="fr">Terme d'oeso-phis 3.3 importé selon MIREOT (même IRI, ontologie source déclarée par rdfs:isDefinedBy) : oeso-phis n'est pas chargé avec ce module. La définition d'oeso-phis, propre à la vigne, n'est pas reprise. Dans oeso-vitis, le greffon d'un cep est un matériel génétique (oeso-vitis:hasGraft).</skos:editorialNote>
-    </owl:Class>
+ 
 
 
     <!-- http://www.opensilex.org/vocabulary/oeso#TIRImage -->
@@ -439,6 +455,11 @@
         <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#Image"/>
         <rdfs:label xml:lang="fr">image infrarouge thermique</rdfs:label>
         <rdfs:label xml:lang="en">IR thermal image</rdfs:label>
+        <rdfs:comment xml:lang="fr">Image du rayonnement infrarouge thermique, c'est-à-dire du rayonnement infrarouge de longueur d'onde comprise entre 3,0 µm et 100 µm, que les objets émettent aux températures ambiantes.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Image of the thermal infrared radiation, i.e. infrared radiation with a wavelength between 3.0 µm and 100 µm, which objects emit at normal environmental temperatures.</rdfs:comment>
+        <dc:source>URI: https://cmr.earthdata.nasa.gov/kms/concept/68c2baba-b9b9-41d4-89bf-07488728bc4f
+
+Definition adapted from: NASA GCMD Science Keywords, THERMAL INFRARED (after Allaby A., Allaby M. (1999). A Dictionary of Earth Sciences).</dc:source>
         <rdfs:isDefinedBy rdf:resource="http://www.opensilex.org/vocabulary/oeso-phis"/>
         <skos:editorialNote xml:lang="fr">Terme d'oeso-phis 3.3 importé selon MIREOT (même IRI, ontologie source déclarée par rdfs:isDefinedBy) : oeso-phis n'est pas chargé avec ce module.</skos:editorialNote>
     </owl:Class>
@@ -450,6 +471,9 @@
         <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#Image"/>
         <rdfs:label xml:lang="fr">image visible et proche infrarouge</rdfs:label>
         <rdfs:label xml:lang="en">visible and near-infrared image</rdfs:label>
+        <rdfs:comment xml:lang="fr">Image acquise dans les bandes spectrales du visible (380 nm à 780 nm) et du proche infrarouge (780 nm à 3 000 nm).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Image acquired in the visible (380 nm to 780 nm) and near-infrared (780 nm to 3 000 nm) spectral bands.</rdfs:comment>
+        <dc:source>Definition adapted from: ISO 20473:2007. Optics and photonics - Spectral bands, clause 2, table 1.</dc:source>
         <rdfs:isDefinedBy rdf:resource="http://www.opensilex.org/vocabulary/oeso-phis"/>
         <skos:editorialNote xml:lang="fr">Terme d'oeso-phis 3.3 importé selon MIREOT (même IRI, ontologie source déclarée par rdfs:isDefinedBy) : oeso-phis n'est pas chargé avec ce module.</skos:editorialNote>
     </owl:Class>
@@ -498,11 +522,10 @@
         <skos:altLabel xml:lang="en">agri-photovoltaic system</skos:altLabel>
         <rdfs:comment xml:lang="fr">Installation de production d'électricité utilisant l'énergie radiative du soleil et dont les modules sont situés sur une parcelle agricole où ils contribuent durablement à l'installation, au maintien ou au développement d'une production agricole.</rdfs:comment>
         <rdfs:comment xml:lang="en">Electricity generation installation using the radiative energy of the sun, whose modules are located on an agricultural plot where they contribute durably to establishing, maintaining or developing an agricultural production (translation of the French Energy Code, art. L314-36).</rdfs:comment>
-        <dc:source>Code de l'énergie, article L314-36 (créé par la loi n° 2023-175 du 10 mars 2023, art. 54). https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047298015</dc:source>
-        <dc:source>Décret n° 2024-318 du 8 avril 2024 relatif au développement de l'agrivoltaïsme et aux conditions d'implantation des installations photovoltaïques sur des terrains agricoles, naturels ou forestiers. https://www.legifrance.gouv.fr/eli/decret/2024/4/8/ECOR2321918D/jo/texte</dc:source>
-        <dc:source>DIN SPEC 91434:2021-05. Agri-photovoltaic systems - Requirements for primary agricultural use. https://www.dinmedia.de/de/technische-regel/din-spec-91434/337886742</dc:source>
-        <dc:source>Dupraz C., Marrou H., Talbot G., Dufour L., Nogier A., Ferard Y. (2011). Combining solar photovoltaic panels and food crops for optimising land use: Towards new agrivoltaic schemes. Renewable Energy 36(10):2725-2732. https://doi.org/10.1016/j.renene.2011.03.005</dc:source>
-        <dc:source>AGROVOC c_9e7141ec agrivoltaic systems. http://aims.fao.org/aos/agrovoc/c_9e7141ec</dc:source>
+        <dc:source>Definition: Code de l'énergie, article L314-36, créé par la loi n° 2023-175 du 10 mars 2023 (art. 54). Légifrance. https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047298015</dc:source>
+        <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/decret/2024/4/8/ECOR2321918D/jo/texte"/>
+        <rdfs:seeAlso rdf:resource="https://www.dinmedia.de/de/technische-regel/din-spec-91434/337886742"/>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1016/j.renene.2011.03.005"/>
         <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_9e7141ec"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#ShadeHouse"/>
     </owl:Class>
@@ -516,12 +539,14 @@
         <rdfs:label xml:lang="en">solar panel</rdfs:label>
         <skos:altLabel xml:lang="fr">panneau photovoltaïque</skos:altLabel>
         <skos:altLabel xml:lang="en">photovoltaic panel</skos:altLabel>
-        <rdfs:comment xml:lang="fr">Panneau composé d'un ou de plusieurs modules photovoltaïques qui convertissent le rayonnement solaire en électricité. (non sourcé)</rdfs:comment>
-        <rdfs:comment xml:lang="en">Panel made of one or several photovoltaic modules that convert solar radiation into electricity. (not sourced)</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Ensemble de modules photovoltaïques pré-assemblés mécaniquement et interconnectés électriquement (traduction de l'IEC TS 61836:2025, 3.1.47).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Set of photovoltaic modules mechanically pre-assembled and electrically interconnected.</rdfs:comment>
+        <dc:source>Definition: IEC TS 61836:2025, entry 3.1.47 "photovoltaic panel". IEC Glossary. https://products.iec.ch/view/glossary/f45eac071e6d7db18ca9368dfd1fe0be</dc:source>
+        <rdfs:seeAlso rdf:resource="https://products.iec.ch/view/glossary/2f5fe7eeba7e2151eec1924415c0ec05"/>
         <skos:closeMatch rdf:resource="https://w3id.org/seas/SolarPanel"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#Panel"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#SolarPanel"/>
-        <skos:editorialNote xml:lang="fr">La classe seas:SolarPanel existe mais n'a pas de définition : la définition reste à sourcer.</skos:editorialNote>
+        <skos:editorialNote xml:lang="fr">L'IEC TS 61836:2025 distingue le panneau (3.1.47, ensemble de modules) du module photovoltaïque (3.1.44) : vérifier que les objets suivis sont bien des panneaux.</skos:editorialNote>
     </owl:Class>
 
 
@@ -534,8 +559,13 @@
         <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso-vitis#PlotComponent"/>
         <rdfs:label xml:lang="fr">sous-parcelle</rdfs:label>
         <rdfs:label xml:lang="en">subplot</rdfs:label>
-        <rdfs:comment xml:lang="fr">Subdivision d'une placette expérimentale (oeso-vitis:ExperimentalPlot), par exemple pour distinguer des variétés. (non sourcé)</rdfs:comment>
-        <rdfs:comment xml:lang="en">Subdivision of an experimental plot (oeso-vitis:ExperimentalPlot), for example to distinguish varieties. (not sourced)</rdfs:comment>
+        <skos:altLabel xml:lang="en">split plot</skos:altLabel>
+        <rdfs:comment xml:lang="fr">Petite parcelle issue de la division d'une grande parcelle dans une expérimentation en parcelles divisées (split-plot), à laquelle les niveaux d'un second facteur, par exemple la variété, sont attribués au hasard.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Small plot resulting from the division of a large (whole) plot in a split-plot experiment, to which the levels of a second factor, for example the variety, are assigned at random.</rdfs:comment>
+        <dc:source>Definition adapted from: Nokoe S. (1992). Technical Paper 7: Statistical and experimental design considerations in alley farming. In: The AFNETA alley farming training manual, Vol. 2. AFNETA/IITA, Ibadan. https://www.fao.org/4/x5546e/x5546e0a.htm</dc:source>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/STATO_0000444"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000329"/>
+        <rdfs:seeAlso rdf:resource="https://pp1.eppo.int/standards/PP1-152-4-en.pdf"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#SubPlot"/>
     </owl:Class>
 
@@ -551,7 +581,7 @@
         <rdfs:label xml:lang="en">fruit</rdfs:label>
         <rdfs:comment xml:lang="fr">Structure végétale multi-tissulaire (PO:0025496) qui se développe à partir d'un gynécée (PO:0009062) ou d'un carpelle unique (PO:0009030) et qui, à maturité, peut contenir une ou plusieurs graines (PO:0009010).</rdfs:comment>
         <rdfs:comment xml:lang="en">A multi-tissue plant structure (PO:0025496) that develops from a gynoecium (PO:0009062), or a single carpel (PO:0009030), and at maturity may have as parts one or more seeds (PO:0009010).</rdfs:comment>
-        <dc:source>Plant Ontology, PO:0009001 fruit. http://purl.obolibrary.org/obo/PO_0009001</dc:source>
+        <dc:source>http://purl.obolibrary.org/obo/PO_0009001</dc:source>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/PO_0009001"/>
         <skos:narrowMatch rdf:resource="http://www.opensilex.org/vocabulary/oeso-vitis#Berry"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#Fruit"/>
@@ -566,8 +596,7 @@
         <rdfs:label xml:lang="en">apple</rdfs:label>
         <rdfs:comment xml:lang="fr">Fruit de type pomme (PO:0030110) du pommier (Malus domestica, AGROVOC c_4555).</rdfs:comment>
         <rdfs:comment xml:lang="en">Pome fruit (PO:0030110) of the apple tree (Malus domestica, AGROVOC c_4555).</rdfs:comment>
-        <dc:source>AGROVOC c_541 apples. http://aims.fao.org/aos/agrovoc/c_541</dc:source>
-        <dc:source>Plant Ontology, PO:0030110 pome fruit. http://purl.obolibrary.org/obo/PO_0030110</dc:source>
+        <dc:source>Definition adapted from: Plant Ontology PO:0030110 pome fruit (http://purl.obolibrary.org/obo/PO_0030110) and AGROVOC c_4555 Malus pumila, alternative label Malus domestica (http://aims.fao.org/aos/agrovoc/c_4555).</dc:source>
         <skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_541"/>
         <skos:broadMatch rdf:resource="http://purl.obolibrary.org/obo/PO_0030110"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#Apple"/>
@@ -582,8 +611,7 @@
         <rdfs:label xml:lang="en">tomato</rdfs:label>
         <rdfs:comment xml:lang="fr">Fruit de type baie (PO:0030108) du plant de tomate (Solanum lycopersicum, AGROVOC c_4475).</rdfs:comment>
         <rdfs:comment xml:lang="en">Berry fruit (PO:0030108) of the tomato plant (Solanum lycopersicum, AGROVOC c_4475).</rdfs:comment>
-        <dc:source>AGROVOC c_7805 tomatoes. http://aims.fao.org/aos/agrovoc/c_7805</dc:source>
-        <dc:source>Plant Ontology, PO:0030108 berry fruit. http://purl.obolibrary.org/obo/PO_0030108</dc:source>
+        <dc:source>Definition adapted from: Plant Ontology PO:0030108 berry fruit (http://purl.obolibrary.org/obo/PO_0030108) and AGROVOC c_4475 Solanum lycopersicum (http://aims.fao.org/aos/agrovoc/c_4475).</dc:source>
         <skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_7805"/>
         <skos:broadMatch rdf:resource="http://purl.obolibrary.org/obo/PO_0030108"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#Tomato"/>
@@ -598,7 +626,7 @@
         <rdfs:label xml:lang="en">corymb</rdfs:label>
         <rdfs:comment xml:lang="fr">Inflorescence (PO:0009049) à croissance à la fois monopodiale et sympodiale qui, au stade floraison (PO:0007616), se compose d'un axe d'inflorescence de premier ordre déterminé (PO:0025104) et d'axes d'ordre supérieur déterminés (PO:0020122) portant des fleurs pédicellées (PO:0009046) qui forment ensemble un plan de fleurs convexe.</rdfs:comment>
         <rdfs:comment xml:lang="en">An inflorescence (PO:0009049) with both monopodial and sympodial growth habits, which at flowering stage (PO:0007616), is composed of a determinate, first order inflorescence axis (PO:0025104), and determinate higher order inflorescence axes (PO:0020122) with pedicellate flowers (PO:0009046) that collectively form a convex plane of flowers.</rdfs:comment>
-        <dc:source>Plant Ontology, PO:0030124 corymb inflorescence. http://purl.obolibrary.org/obo/PO_0030124</dc:source>
+        <dc:source>http://purl.obolibrary.org/obo/PO_0030124</dc:source>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/PO_0030124"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#Corymbe"/>
     </owl:Class>
@@ -612,7 +640,7 @@
         <rdfs:label xml:lang="en">truss</rdfs:label>
         <rdfs:comment xml:lang="fr">Inflorescence (PO:0009049) du plant de tomate (Solanum lycopersicum).</rdfs:comment>
         <rdfs:comment xml:lang="en">Inflorescence (PO:0009049) of the tomato plant (Solanum lycopersicum), referred to as a truss in tomato.</rdfs:comment>
-        <dc:source>Silva Ferreira D., Kevei Z., Kurowski T., de Noronha Fonseca M.E., Mohareb F., Boiteux L.S., Thompson A.J. (2018). BIFURCATE FLOWER TRUSS: a novel locus controlling inflorescence branching in tomato contains a defective MAP kinase gene. Journal of Experimental Botany 69(10):2581-2593. https://doi.org/10.1093/jxb/ery076</dc:source>
+        <dc:source>Definition: Silva Ferreira D., Kevei Z., Kurowski T., de Noronha Fonseca M.E., Mohareb F., Boiteux L.S., Thompson A.J. (2018). BIFURCATE FLOWER TRUSS: a novel locus controlling inflorescence branching in tomato contains a defective MAP kinase gene. Journal of Experimental Botany 69(10):2581-2593. https://doi.org/10.1093/jxb/ery076</dc:source>
         <skos:broadMatch rdf:resource="http://purl.obolibrary.org/obo/PO_0009049"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#Truss"/>
     </owl:Class>
@@ -626,8 +654,7 @@
         <rdfs:label xml:lang="en">branch</rdfs:label>
         <rdfs:comment xml:lang="fr">Axe de pousse (PO:0025029) qui se développe à partir d'un méristème de bourgeon axillaire (PO:0000232) ou de divisions égales d'une cellule apicale méristématique (PO:0030007).</rdfs:comment>
         <rdfs:comment xml:lang="en">A shoot axis (PO:0025029) that develops from an axillary bud meristem (PO:0000232) or from equal divisions of a meristematic apical cell (PO:0030007).</rdfs:comment>
-        <dc:source>Plant Ontology, PO:0025073 branch. http://purl.obolibrary.org/obo/PO_0025073</dc:source>
-        <dc:source>AGROVOC c_23995 branches. http://aims.fao.org/aos/agrovoc/c_23995</dc:source>
+        <dc:source>http://purl.obolibrary.org/obo/PO_0025073</dc:source>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/PO_0025073"/>
         <skos:closeMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_23995"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#Branch"/>
@@ -644,8 +671,7 @@
         <skos:altLabel xml:lang="en">trunk</skos:altLabel>
         <rdfs:comment xml:lang="fr">Tige (PO:0009047), c'est-à-dire axe principal de la plante, d'une plante ligneuse pérenne comme un arbre ou une vigne. « Tronc » est un synonyme restreint de « tige » dans la Plant Ontology.</rdfs:comment>
         <rdfs:comment xml:lang="en">Stem (PO:0009047), i.e. primary axis of the plant, of a woody perennial plant such as a tree or a grapevine. 'Trunk' is a narrow synonym of 'stem' in the Plant Ontology.</rdfs:comment>
-        <dc:source>Plant Ontology, PO:0009047 stem (narrow synonym: trunk). http://purl.obolibrary.org/obo/PO_0009047</dc:source>
-        <dc:source>AGROVOC c_15017 trunks. http://aims.fao.org/aos/agrovoc/c_15017</dc:source>
+        <dc:source>Definition adapted from: Plant Ontology PO:0009047 stem, narrow synonym trunk (http://purl.obolibrary.org/obo/PO_0009047) and AGROVOC c_15017 trunks (http://aims.fao.org/aos/agrovoc/c_15017).</dc:source>
         <skos:broadMatch rdf:resource="http://purl.obolibrary.org/obo/PO_0009047"/>
         <skos:closeMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_15017"/>
         <skos:narrowMatch rdf:resource="http://www.opensilex.org/vocabulary/oeso-vitis#Trunk"/>
@@ -659,9 +685,9 @@
         <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso-vitis#Shoot"/>
         <rdfs:label xml:lang="fr">rameau latéral</rdfs:label>
         <rdfs:label xml:lang="en">lateral shoot</rdfs:label>
-        <rdfs:comment xml:lang="fr">Rameau qui se développe à partir d'un bourgeon axillaire (PO:0004709) ; correspond au système de pousse axillaire (PO:0006343) de la Plant Ontology.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Shoot that develops from an axillary bud (PO:0004709); corresponds to the axillary shoot system (PO:0006343) of the Plant Ontology.</rdfs:comment>
-        <dc:source>Plant Ontology, PO:0006343 axillary shoot system. http://purl.obolibrary.org/obo/PO_0006343</dc:source>
+        <rdfs:comment xml:lang="fr">Rameau qui se développe à partir d'un bourgeon axillaire, ou bourgeon latéral (PO:0004709) ; correspond au système de pousse axillaire (PO:0006343) de la Plant Ontology.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Shoot that develops from an axillary bud, or lateral bud (PO:0004709); corresponds to the axillary shoot system (PO:0006343) of the Plant Ontology.</rdfs:comment>
+        <dc:source>Definition adapted from: Plant Ontology PO:0006343 axillary shoot system (http://purl.obolibrary.org/obo/PO_0006343) and Zaid A., Hughes H.G., Porceddu E., Nicholas F. (2001). Glossary of biotechnology for food and agriculture. FAO Research and Technology Paper 9, Rome, entry "axillary bud" (synonym: lateral bud). https://www.fao.org/4/Y2775E/y2775e07.htm</dc:source>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/PO_0006343"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#LateralShoot"/>
     </owl:Class>
@@ -673,8 +699,9 @@
         <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso-vitis#Shoot"/>
         <rdfs:label xml:lang="fr">rameau terminal</rdfs:label>
         <rdfs:label xml:lang="en">terminal shoot</rdfs:label>
-        <rdfs:comment xml:lang="fr">Rameau issu du bourgeon terminal (apical) d'un axe. (non sourcé)</rdfs:comment>
-        <rdfs:comment xml:lang="en">Shoot that develops from the terminal (apical) bud of an axis. (not sourced)</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Rameau qui se développe à partir d'un bourgeon terminal (PO:0004713), c'est-à-dire d'un bourgeon issu d'un méristème apical de pousse.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Shoot that develops from a terminal bud (PO:0004713), i.e. a bud that develops from a shoot apical meristem.</rdfs:comment>
+        <dc:source>Definition adapted from: Plant Ontology PO:0004713 terminal bud (http://purl.obolibrary.org/obo/PO_0004713).</dc:source>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#TerminalShoot"/>
     </owl:Class>
 
@@ -687,8 +714,8 @@
         <rdfs:label xml:lang="en">bourse shoot</rdfs:label>
         <rdfs:comment xml:lang="fr">Pousse végétative qui se développe à partir d'un bourgeon axillaire de la bourse, axe court et renflé issu du bourgeon floral du pommier.</rdfs:comment>
         <rdfs:comment xml:lang="en">Vegetative shoot that develops from an axillary bud on the bourse, the short swollen axis into which the floral bud of the apple tree develops.</rdfs:comment>
-        <dc:source>Wang Y.-T., Pallas B., Salazar-Gutierrez M.R., Costes E., Hoogenboom G. (2020). A comparative study on the branching pattern of monocyclic and bicyclic shoots of apple cv. 'Fuji'. Frontiers in Plant Science 11:571918. https://doi.org/10.3389/fpls.2020.571918</dc:source>
-        <dc:source>Pratt C. (1988). Apple flower and fruit: morphology and anatomy. Horticultural Reviews, pp. 273-308. https://doi.org/10.1002/9781118060834.ch8</dc:source>
+        <dc:source>Definition: Wang Y.-T., Pallas B., Salazar-Gutierrez M.R., Costes E., Hoogenboom G. (2020). A comparative study on the branching pattern of monocyclic and bicyclic shoots of apple cv. 'Fuji'. Frontiers in Plant Science 11:571918. https://doi.org/10.3389/fpls.2020.571918</dc:source>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1002/9781118060834.ch8"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#bourseShoot"/>
     </owl:Class>
 
@@ -703,7 +730,7 @@
         <skos:altLabel xml:lang="en">stem sucker</skos:altLabel>
         <rdfs:comment xml:lang="fr">Pousse qui se développe à partir d'une tige (PO:0009047), par exemple sur le tronc ou sur une branche (PO:0004546 epicormic shoot system).</rdfs:comment>
         <rdfs:comment xml:lang="en">Shoot system developing from a stem (PO:0009047), for example on the trunk or on a branch (PO:0004546 epicormic shoot system).</rdfs:comment>
-        <dc:source>Plant Ontology, PO:0004546 epicormic shoot system (exact synonym: stem sucker). http://purl.obolibrary.org/obo/PO_0004546</dc:source>
+        <dc:source>Definition adapted from: Plant Ontology PO:0004546 epicormic shoot system, exact synonym stem sucker (http://purl.obolibrary.org/obo/PO_0004546).</dc:source>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/PO_0004546"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#Sucker"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#waterSprout"/>
@@ -711,17 +738,6 @@
     </owl:Class>
 
 
-    <!-- http://www.opensilex.org/vocabulary/oeso-agrivoltaics#Terminal -->
-
-    <owl:Class rdf:about="http://www.opensilex.org/vocabulary/oeso-agrivoltaics#Terminal">
-        <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#ScientificObject"/>
-        <rdfs:label xml:lang="fr">terminal</rdfs:label>
-        <rdfs:label xml:lang="en">terminal</rdfs:label>
-        <rdfs:comment xml:lang="fr">Concept repris de oeso-sunagri, où il n'avait pas de définition ; son sens doit être précisé par un expert du domaine. (non sourcé)</rdfs:comment>
-        <rdfs:comment xml:lang="en">Concept taken over from oeso-sunagri, where it had no definition; its meaning must be specified by a domain expert. (not sourced)</rdfs:comment>
-        <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#Terminal"/>
-        <skos:editorialNote xml:lang="fr">Sens inconnu : à définir ou à déprécier.</skos:editorialNote>
-    </owl:Class>
 
 
     <!-- ===== Capteurs ===== -->
@@ -735,8 +751,10 @@
         <rdfs:label xml:lang="en">dendrometer</rdfs:label>
         <rdfs:comment xml:lang="fr">Appareil de mesure des faibles variations du diamètre d'un tronc d'arbre, comme les contractions et les gonflements qui accompagnent les fluctuations journalières de la transpiration.</rdfs:comment>
         <rdfs:comment xml:lang="en">Device for measuring small changes in the diameter of a tree trunk, such as the minute amounts of shrinkage and swelling that accompany the daily fluctuations in transpiration.</rdfs:comment>
-        <dc:source>EnvThes 20365 dendrometer (definition from Henderson's Dictionary of Biology). http://vocabs.lter-europe.net/EnvThes/20365</dc:source>
-        <dc:source>Drew D.M., Downes G.M. (2009). The use of precision dendrometers in research on daily stem size and wood property variation: A review. Dendrochronologia 27(2):159-172. https://doi.org/10.1016/j.dendro.2009.06.008</dc:source>
+        <dc:source>URI: http://vocabs.lter-europe.net/EnvThes/20365
+
+Definition: EnvThes (LTER-Europe environmental thesaurus), concept 20365 "dendrometer", definition taken from Henderson's Dictionary of Biology.</dc:source>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1016/j.dendro.2009.06.008"/>
         <skos:exactMatch rdf:resource="http://vocabs.lter-europe.net/EnvThes/20365"/>
         <skos:closeMatch rdf:resource="https://lod.nal.usda.gov/nalt/32311"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#Dendrometer"/>
@@ -753,8 +771,12 @@
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:label xml:lang="fr">infrastructure locale</rdfs:label>
         <rdfs:label xml:lang="en">local infrastructure</rdfs:label>
-        <rdfs:comment xml:lang="fr">Groupe d'installations situées sur un même site et dépendant d'une ou de plusieurs institutions, qui partagent des comités de gouvernance, un système d'information commun (ou du moins très interopérable), des principes communs de calcul des coûts et de tarification, et un outil commun d'accès des utilisateurs. (non sourcé)</rdfs:comment>
-        <rdfs:comment xml:lang="en">Group of installations located in one site depending on one institution (or more), which share governance committees, a common (or at least highly interoperable) information system, common principles for cost calculation and pricing and a common tool for user access. (not sourced)</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Groupe d'installations situées sur un même site et dépendant d'une ou de plusieurs institutions, qui partagent des comités de gouvernance, un système d'information commun (ou du moins très interopérable), des principes communs de calcul des coûts et de tarification, et un outil commun d'accès des utilisateurs (traduction d'OEPO).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Group of installations located in one site depending on one institution (or more), which share governance committees, a common (or at least highly interoperable) information system, common principles for cost calculation and pricing and a common tool for user access.</rdfs:comment>
+        <dc:source>URI: http://www.phenome-fppn.fr/vocabulary/2018/oepo#LocalInfrastructure
+
+Definition: Tireau A., Cabrera-Bosquet L., Neveu P. (2018). Ontology for Experimental Phenotypic Objects (OEPO). Portail Data INRAE. https://doi.org/10.15454/PG4VUH</dc:source>
+        <skos:exactMatch rdf:resource="http://www.phenome-fppn.fr/vocabulary/2018/oepo#LocalInfrastructure"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#LocalInfrastructure"/>
         <skos:editorialNote xml:lang="fr">Concept générique, candidat pour oeso-core.</skos:editorialNote>
     </owl:Class>
@@ -766,8 +788,12 @@
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:label xml:lang="fr">infrastructure nationale</rdfs:label>
         <rdfs:label xml:lang="en">national infrastructure</rdfs:label>
-        <rdfs:comment xml:lang="fr">Groupe organisé d'infrastructures locales dont la gouvernance est reconnue par les autorités nationales (ministère ou structures nationales). (non sourcé)</rdfs:comment>
-        <rdfs:comment xml:lang="en">Organised group of local infrastructures with governance recognised by national authorities (e.g. the relevant ministry or national structures). (not sourced)</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Groupe organisé d'infrastructures locales dont la gouvernance est reconnue par les autorités nationales (par exemple le ministère concerné ou des structures nationales) (traduction d'OEPO).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Organized group of local infrastructures with governance recognised by national authorities (e.g. respective ministry or national structures).</rdfs:comment>
+        <dc:source>URI: http://www.phenome-fppn.fr/vocabulary/2018/oepo#NationalInfrastructure
+
+Definition: Tireau A., Cabrera-Bosquet L., Neveu P. (2018). Ontology for Experimental Phenotypic Objects (OEPO). Portail Data INRAE. https://doi.org/10.15454/PG4VUH</dc:source>
+        <skos:exactMatch rdf:resource="http://www.phenome-fppn.fr/vocabulary/2018/oepo#NationalInfrastructure"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#NationalInfrastructure"/>
         <skos:editorialNote xml:lang="fr">Concept générique, candidat pour oeso-core.</skos:editorialNote>
     </owl:Class>
@@ -779,8 +805,11 @@
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:label xml:lang="fr">infrastructure européenne</rdfs:label>
         <rdfs:label xml:lang="en">european infrastructure</rdfs:label>
-        <rdfs:comment xml:lang="fr">Infrastructure de recherche organisée à l'échelle européenne, qui regroupe des infrastructures nationales, par exemple le projet ESFRI EMPHASIS (https://emphasis.plant-phenotyping.eu/). (non sourcé)</rdfs:comment>
-        <rdfs:comment xml:lang="en">Research infrastructure organised at European level that groups national infrastructures, for example the ESFRI project EMPHASIS (https://emphasis.plant-phenotyping.eu/). (not sourced)</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Infrastructure de recherche d'envergure européenne : installations, ressources ou services de nature unique identifiés par les communautés de recherche européennes pour conduire et soutenir des activités de recherche de premier plan dans leur domaine (d'après l'ESFRI).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Research infrastructure of European scope: facilities, resources or services of a unique nature identified by European research communities to conduct and to support top-level research activities in their fields (after ESFRI).</rdfs:comment>
+        <dc:source>Definition adapted from: ESFRI (2021). Roadmap 2021, Strategy Report, p. 12. https://roadmap2021.esfri.eu/media/1295/esfri-roadmap-2021.pdf</dc:source>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/reg/2009/723/oj"/>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/reg/2021/695/oj"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#EuropeanInfrastructure"/>
         <skos:editorialNote xml:lang="fr">L'ancien commentaire décrivait le projet EMPHASIS au lieu de définir le concept.</skos:editorialNote>
     </owl:Class>
@@ -792,8 +821,10 @@
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:label xml:lang="fr">plateforme</rdfs:label>
         <rdfs:label xml:lang="en">platform</rdfs:label>
-        <rdfs:comment xml:lang="fr">Organisation qui met à disposition des équipements et des compétences partagés pour des expérimentations, par exemple une plateforme de phénotypage. (non sourcé)</rdfs:comment>
-        <rdfs:comment xml:lang="en">Organisation that provides shared equipment and expertise for experiments, for example a phenotyping platform. (not sourced)</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Regroupement sur un même site ou plusieurs sites des équipements et des moyens humains destinés à offrir à une communauté d'utilisateurs des ressources technologiques de haut niveau.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Grouping, on one or several sites, of equipment and human resources intended to offer high-level technological resources to a community of users (translation of the IBiSA platform charter).</rdfs:comment>
+        <dc:source>Definition: GIS IBiSA. Charte des plateformes, section « Définition ». https://ibisa.net/charte-des-plateformes.html</dc:source>
+        <skos:relatedMatch rdf:resource="http://www.phenome-fppn.fr/vocabulary/2018/oepo#Installation"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#Platform"/>
         <skos:editorialNote xml:lang="fr">L'ancien concept n'avait aucune super-classe et n'apparaissait donc pas dans OpenSILEX.</skos:editorialNote>
     </owl:Class>
@@ -805,9 +836,13 @@
         <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#ExperimentalUnit"/>
         <rdfs:label xml:lang="fr">site expérimental</rdfs:label>
         <rdfs:label xml:lang="en">experimental site</rdfs:label>
-        <rdfs:comment xml:lang="fr">Site où sont conduites des expérimentations, rattaché à une unité expérimentale. (non sourcé)</rdfs:comment>
-        <rdfs:comment xml:lang="en">Site where experiments are carried out, attached to an experimental unit. (not sourced)</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Unité expérimentale (organisation) correspondant à un lieu où sont mises en œuvre des expérimentations (AGRO:00000360 experimental site).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Experimental unit (organisation) corresponding to a location where experiments are implemented (AGRO:00000360 experimental site).</rdfs:comment>
+        <dc:source>Definition adapted from: Agronomy Ontology AGRO:00000360 experimental site (http://purl.obolibrary.org/obo/AGRO_00000360).</dc:source>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/ENVO_03501119"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000360"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#ExperimentalSite"/>
+        <skos:editorialNote xml:lang="fr">AGRO définit un lieu ; oeso-core propose org:Site pour les lieux. Le rattachement à oeso:ExperimentalUnit (organisation) est conservé pour les données existantes. À valider.</skos:editorialNote>
     </owl:Class>
 
 
@@ -822,7 +857,7 @@
         <rdfs:label xml:lang="en">experimental design</rdfs:label>
         <rdfs:comment xml:lang="fr">Document qui décrit le plan d'une expérimentation, c'est-à-dire la spécification des protocoles exécutés dans le cadre d'une investigation (OBI:0500000 study design).</rdfs:comment>
         <rdfs:comment xml:lang="en">Document describing the design of an experiment, i.e. the plan specification comprising the protocols executed as part of an investigation (OBI:0500000 study design).</rdfs:comment>
-        <dc:source>Ontology for Biomedical Investigations, OBI:0500000 study design. http://purl.obolibrary.org/obo/OBI_0500000</dc:source>
+        <dc:source>Definition adapted from: Ontology for Biomedical Investigations OBI:0500000 study design (http://purl.obolibrary.org/obo/OBI_0500000).</dc:source>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#ExperimentalDesign"/>
     </owl:Class>
@@ -835,9 +870,11 @@
         <rdfs:label xml:lang="fr">mémoire de master</rdfs:label>
         <rdfs:label xml:lang="en">master's thesis</rdfs:label>
         <skos:altLabel xml:lang="fr">rapport de stage de master</skos:altLabel>
-        <rdfs:comment xml:lang="fr">Mémoire rédigé pour l'obtention d'un diplôme de master (concept aligné sur fabio:MastersThesis).</rdfs:comment>
-        <rdfs:comment xml:lang="en">Thesis written for a master's degree (aligned with fabio:MastersThesis).</rdfs:comment>
-        <dc:source>Peroni S., Shotton D. (2012). FaBiO and CiTO: ontologies for describing bibliographic resources and citations. Journal of Web Semantics 17:33-43. http://purl.org/spar/fabio/</dc:source>
+        <rdfs:comment xml:lang="fr">Mémoire rendant compte de recherches menées dans le cadre d'un cursus de troisième cycle conduisant à l'obtention d'un diplôme de master (traduction de FaBiO).</rdfs:comment>
+        <rdfs:comment xml:lang="en">A thesis reporting research undertaken as part of a postgraduate course leading to the award of a master's degree.</rdfs:comment>
+        <dc:source>URI: http://purl.org/spar/fabio/MastersThesis
+
+Definition: Peroni S., Shotton D. (2012). FaBiO and CiTO: ontologies for describing bibliographic resources and citations. Journal of Web Semantics 17:33-43. FaBiO 2.3.1.</dc:source>
         <skos:exactMatch rdf:resource="http://purl.org/spar/fabio/MastersThesis"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#MasterThesis"/>
     </owl:Class>
@@ -850,9 +887,11 @@
         <rdfs:label xml:lang="fr">thèse de doctorat</rdfs:label>
         <rdfs:label xml:lang="en">doctoral thesis</rdfs:label>
         <skos:altLabel xml:lang="en">PhD thesis</skos:altLabel>
-        <rdfs:comment xml:lang="fr">Thèse rédigée pour l'obtention d'un doctorat (concept aligné sur fabio:DoctoralThesis).</rdfs:comment>
-        <rdfs:comment xml:lang="en">Thesis written for a doctoral degree (aligned with fabio:DoctoralThesis).</rdfs:comment>
-        <dc:source>Peroni S., Shotton D. (2012). FaBiO and CiTO: ontologies for describing bibliographic resources and citations. Journal of Web Semantics 17:33-43. http://purl.org/spar/fabio/</dc:source>
+        <rdfs:comment xml:lang="fr">Thèse rendant compte de recherches originales menées pour obtenir un doctorat, contenant généralement l'exposé des recherches de l'auteur, des méthodes utilisées, des résultats obtenus et des conclusions (traduction de FaBiO).</rdfs:comment>
+        <rdfs:comment xml:lang="en">A thesis reporting original research undertaken to obtain a doctoral degree, typically containing an account of the research undertaken by the author, the methods used, the results obtained, and conclusions drawn.</rdfs:comment>
+        <dc:source>URI: http://purl.org/spar/fabio/DoctoralThesis
+
+Definition: Peroni S., Shotton D. (2012). FaBiO and CiTO: ontologies for describing bibliographic resources and citations. Journal of Web Semantics 17:33-43. FaBiO 2.3.1.</dc:source>
         <skos:exactMatch rdf:resource="http://purl.org/spar/fabio/DoctoralThesis"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeso#PhDThesis"/>
     </owl:Class>
@@ -867,10 +906,11 @@
         <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeev#Thinning"/>
         <rdfs:label xml:lang="fr">éclaircissage manuel</rdfs:label>
         <rdfs:label xml:lang="en">manual thinning</rdfs:label>
-        <rdfs:comment xml:lang="fr">Éclaircissage des fruits (AGROVOC c_32701) réalisé à la main, en supprimant des fleurs à la fin du printemps ou des jeunes fruits après la nouaison.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Fruit thinning (AGROVOC c_32701) carried out by hand, by removing flowers in late spring or fruitlets after fruit set.</rdfs:comment>
-        <dc:source>AGROVOC c_32701 defruiting (alternative label: fruit thinning). http://aims.fao.org/aos/agrovoc/c_32701</dc:source>
-        <dc:source>Costa G., Botton A., Vizzotto G. (2018). Fruit thinning: advances and trends. Horticultural Reviews 46:185-226. https://doi.org/10.1002/9781119521082.ch4</dc:source>
+        <skos:altLabel xml:lang="en">hand thinning</skos:altLabel>
+        <rdfs:comment xml:lang="fr">Éclaircissage des fruits, c'est-à-dire suppression des fruits en excès pour améliorer le calibre et la qualité des fruits restants, réalisé à la main sur les fleurs ou les jeunes fruits.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fruit thinning, i.e. removal of excess fruits to improve the size and quality of the remaining fruits, carried out by hand on blossoms or small fruitlets.</rdfs:comment>
+        <dc:source>Definition adapted from: Zaid A., Hughes H.G., Porceddu E., Nicholas F. (2001). Glossary of biotechnology for food and agriculture. FAO Research and Technology Paper 9, Rome, entry "thinning" (sense 2). https://www.fao.org/4/Y2775E/y2775e0a.htm and Patiyal V. et al. (2024). Heliyon 10(8):e29546. https://doi.org/10.1016/j.heliyon.2024.e29546</dc:source>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.24326/asphc.2025.5489"/>
         <skos:broadMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_32701"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeev#ManualThinning"/>
     </owl:Class>
@@ -884,8 +924,7 @@
         <rdfs:label xml:lang="en">drought</rdfs:label>
         <rdfs:comment xml:lang="fr">Période exceptionnelle de manque d'eau pour les écosystèmes et la population (due à de faibles précipitations, à une température élevée et/ou au vent) (traduction du glossaire du GIEC).</rdfs:comment>
         <rdfs:comment xml:lang="en">An exceptional period of water shortage for existing ecosystems and the human population (due to low rainfall, high temperature, and/or wind).</rdfs:comment>
-        <dc:source>IPCC (2021). Annex VII: Glossary [Matthews J.B.R. et al. (eds.)]. In: Climate Change 2021: The Physical Science Basis. Cambridge University Press, pp. 2215-2256. https://doi.org/10.1017/9781009157896.022</dc:source>
-        <dc:source>AGROVOC c_2391 drought. http://aims.fao.org/aos/agrovoc/c_2391</dc:source>
+        <dc:source>Definition: IPCC (2021). Annex VII: Glossary [Matthews J.B.R. et al. (eds.)]. In: Climate Change 2021: The Physical Science Basis. Cambridge University Press, pp. 2215-2256. https://doi.org/10.1017/9781009157896.022</dc:source>
         <skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_2391"/>
         <dcterms:replaces rdf:resource="http://www.opensilex.org/vocabulary/oeev#Drought"/>
     </owl:Class>
