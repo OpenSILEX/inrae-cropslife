@@ -1995,6 +1995,23 @@ draining, pressing.</rdfs:comment>
     
 
 
+
+    <!-- http://vitioeno.inrae.fr/vocabulary#Clone -->
+
+    <owl:Class rdf:about="http://vitioeno.inrae.fr/vocabulary#Clone">
+        <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#Germplasm"/>
+        <source>RÉSOLUTION OIV-VITI 564A-2017
+PROTOCOLE DE L’OIV POUR LA SÉLECTION CLONALE DES VIGNES
+https://www.oiv.int/fr/node/3149/download/pdf&amp;ved=2ahUKEwjs0Yzlt7OUAxX0_rsIHSn7EqsQFnoECD8QAQ&amp;usg=AOvVaw1h61ImR8w08VAOSvlw4NaC</source>
+        <rdfs:comment xml:lang="en">A clone is a vegetative offspring of a single grapevine plant. For selection purposes, this single plant is chosen for its varietal identity, its phenotypic traits, and its health status.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Un clone est une descendance végétative d’un plant de vigne unique. Aux fins de la
+sélection, ce plant unique est choisi pour son identité variétale, ses traits
+phénotypiques et son état sanitaire.</rdfs:comment>
+        <rdfs:label xml:lang="en">Clone</rdfs:label>
+        <rdfs:label xml:lang="fr">Clone</rdfs:label>
+    </owl:Class>
+    
+
     <!-- http://www.opensilex.org/vocabulary/oeso#Vector -->
 
     <owl:Class rdf:about="http://www.opensilex.org/vocabulary/oeso#Vector">
