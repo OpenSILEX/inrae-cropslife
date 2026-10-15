@@ -1,0 +1,22 @@
+{
+    "cropslife": {
+        "welcome-message": "Bienvenue dans OpenSILEX CropsLife",
+        "title": "OpenSILEX pour le stockage et le partage de données d'expérimentation agrivoltaïques",
+        "login": {
+            "info": "Merci de saisir vos identifiants pour vous connecter à l'application"
+        },
+        "data-analysis-label" : "Autres applications",
+        "component": {
+            "login": {
+                "copyright": {
+                    "1": "",
+                    "2": "Sun'Agri - Système d'Information pour les expérimentations agrivoltaïques",
+                    "3": "Version 2 du 2021/10/03"
+                }
+            },
+            "footer": {
+                "copyright": "Copyright © 2019 - 2021 INRAE Tous Droits Déservés. Sun'Agri {version} version du {date}"
+            }
+        }
+    }
+}
