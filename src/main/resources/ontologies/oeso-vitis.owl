@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.org/dc/elements/1.1/"
-     xml:base="http://www.opensilex.org/vocabulary/oeso-vitis"
+     xml:base="http://purl.org/dc/elements/1.1/"
      xmlns:dc="http://purl.org/dc/terms/"
      xmlns:fn="http://www.w3.org/2005/xpath-functions#"
      xmlns:oa="http://www.w3.org/ns/oa#"
@@ -523,6 +523,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.opensilex.org/vocabulary/oeso-vitis#hasGraft">
         <rdfs:subPropertyOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#hasGermplasm"/>
+        <rdfs:label xml:lang="fr">a comme greffon</rdfs:label>
+        <rdfs:label xml:lang="en">has graft</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -531,6 +533,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.opensilex.org/vocabulary/oeso-vitis#hasRootstock">
         <rdfs:subPropertyOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#hasGermplasm"/>
+        <rdfs:label xml:lang="fr">a pour portegreffe</rdfs:label>
+        <rdfs:label xml:lang="en">has rootstock</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -895,6 +899,23 @@ draining, pressing.</rdfs:comment>
         <rdfs:comment xml:lang="fr">Boisson résultant exclusivement de la fermentation alcoolique complète ou partielle du raisin frais, foulé ou non, ou du moût de raisin.</rdfs:comment>
         <rdfs:label xml:lang="fr">Vin</rdfs:label>
         <rdfs:label xml:lang="en">Wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vitioeno.inrae.fr/vocabulary#Clone -->
+
+    <owl:Class rdf:about="http://vitioeno.inrae.fr/vocabulary#Clone">
+        <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#Germplasm"/>
+        <source>RÉSOLUTION OIV-VITI 564A-2017
+PROTOCOLE DE L’OIV POUR LA SÉLECTION CLONALE DES VIGNES
+https://www.oiv.int/fr/node/3149/download/pdf&amp;ved=2ahUKEwjs0Yzlt7OUAxX0_rsIHSn7EqsQFnoECD8QAQ&amp;usg=AOvVaw1h61ImR8w08VAOSvlw4NaC</source>
+        <rdfs:comment xml:lang="en">A clone is a vegetative offspring of a single grapevine plant. For selection purposes, this single plant is chosen for its varietal identity, its phenotypic traits, and its health status.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Un clone est une descendance végétative d’un plant de vigne unique. Aux fins de la
+sélection, ce plant unique est choisi pour son identité variétale, ses traits
+phénotypiques et son état sanitaire.</rdfs:comment>
+        <rdfs:label xml:lang="en">Clone</rdfs:label>
+        <rdfs:label xml:lang="fr">Clone</rdfs:label>
     </owl:Class>
     
 
@@ -1994,23 +2015,6 @@ draining, pressing.</rdfs:comment>
     </owl:Class>
     
 
-
-
-    <!-- http://vitioeno.inrae.fr/vocabulary#Clone -->
-
-    <owl:Class rdf:about="http://vitioeno.inrae.fr/vocabulary#Clone">
-        <rdfs:subClassOf rdf:resource="http://www.opensilex.org/vocabulary/oeso#Germplasm"/>
-        <source>RÉSOLUTION OIV-VITI 564A-2017
-PROTOCOLE DE L’OIV POUR LA SÉLECTION CLONALE DES VIGNES
-https://www.oiv.int/fr/node/3149/download/pdf&amp;ved=2ahUKEwjs0Yzlt7OUAxX0_rsIHSn7EqsQFnoECD8QAQ&amp;usg=AOvVaw1h61ImR8w08VAOSvlw4NaC</source>
-        <rdfs:comment xml:lang="en">A clone is a vegetative offspring of a single grapevine plant. For selection purposes, this single plant is chosen for its varietal identity, its phenotypic traits, and its health status.</rdfs:comment>
-        <rdfs:comment xml:lang="fr">Un clone est une descendance végétative d’un plant de vigne unique. Aux fins de la
-sélection, ce plant unique est choisi pour son identité variétale, ses traits
-phénotypiques et son état sanitaire.</rdfs:comment>
-        <rdfs:label xml:lang="en">Clone</rdfs:label>
-        <rdfs:label xml:lang="fr">Clone</rdfs:label>
-    </owl:Class>
-    
 
     <!-- http://www.opensilex.org/vocabulary/oeso#Vector -->
 

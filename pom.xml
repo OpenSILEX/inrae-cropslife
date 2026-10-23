@@ -20,7 +20,7 @@
     <version>1.0.0</version>
 
     <properties>
-        <revision>BUILD-SNAPSHOT</revision>
+        <revision>1.5.9</revision>
         <skipFrontTypesGeneration>true</skipFrontTypesGeneration>
     </properties>
     
