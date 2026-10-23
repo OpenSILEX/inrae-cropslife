@@ -17,7 +17,7 @@
     <artifactId>inrae-cropslife</artifactId>
     <packaging>jar</packaging>
     <name>inrae-cropslife</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <properties>
         <revision>1.5.9</revision>
