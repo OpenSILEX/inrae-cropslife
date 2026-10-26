@@ -1,6 +1,6 @@
 {
   "name": "inrae-cropslife",
-  "version": "0.1.0",
+  "version": "1.0.3",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service build --target lib --formats umd-min src/index.ts --mode development --watch",
@@ -39,8 +39,12 @@
       "parser": "@typescript-eslint/parser"
     }
   },
-    "browserslist": [
-        "> 1%",
-        "last 2 versions"
-    ]
+  "dependencies": {},
+  "resolutions": {
+  "node-releases": "2.0.44",
+  "browserslist": "4.24.4",
+  "minimatch": "3.1.2",
+  "brace-expansion": "1.1.11",
+  "balanced-match": "1.0.2"
+  }
 }
