@@ -41,5 +41,7 @@
         }
     },
    
-    "dependencies": {}
+    "dependencies": {
+        "node-releases": "2.0.44"
+    }
 }
